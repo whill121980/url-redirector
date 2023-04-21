@@ -4,6 +4,7 @@ services:
   apache:
     container_name: url-redirector
     image: httpd:latest
+    restart: always
 
     volumes:
       - ./conf:/usr/local/apache2/conf

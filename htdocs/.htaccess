@@ -1,6 +1,5 @@
 RewriteEngine on
 
-# RewriteRule ^/(\?.*)$ /index.html?q=$1
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RedirectMatch  ^/(.*?)/$ /$1
